@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="title">Movie Booking App</h2>
+    <div class="screen">
+    </div>
+
+    <div class="seats">  
+    </div>
+     
+    <div id="modal" class="bookingModal hidden">
+        <h3 class="title">Book Your Movie Ticket</h3>
+        <svg class="cancel-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+          </svg>
+        <input type="hidden" id="seatNumber" value="">
+        <input type="text" class="input" placeholder="Enter name" id="name">
+        <input type="text" class="input" placeholder="Enter email" id="email">
+        <button class="book-btn" type="submit">Book Ticket</button>
+    </div>
+
+    <div class="messagebox hidden">
+        <h2 class="title">Housefull!.All tickets are sold out!</h2>
+    </div>
+    <div class="cancelbox hidden">
+        <h3 class="title">Do you want to cancel the seat?</h3>
+        <button class="yes-btn" type="submit">Yes</button>
+        <button class="no-btn" type="submit">No</button>
+    </div>
+    <div class="rightsidebar">
+        <h3 class="title">Seat Booking Details</h3>
+        <div class="seatdetails">
+            
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
